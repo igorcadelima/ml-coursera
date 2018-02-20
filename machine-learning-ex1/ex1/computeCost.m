@@ -12,10 +12,9 @@ J = 0;
 % ====================== YOUR CODE HERE ======================
 % Instructions: Compute the cost of a particular choice of theta
 %               You should set J to the cost.
-
-
-
-
+h = X*theta;
+diff_hy = h-y;
+J = sum(diff_hy.^2)/(2*m);
 
 % =========================================================================
 
